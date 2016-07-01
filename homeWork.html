@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homeWork</title>
+	<style>
+		li{
+			list-style: none;
+		}
+		#myul{
+			display:block;
+		}
+	
+	</style>
+</head>
+<body>
+	<p onClick="show('myul')"><img src="images/fold.gif" alt="树形菜单">树形菜单</p>
+	<ul id="myul">
+		<li>
+			<p onClick="show('myul1')"><img src='images/doc.gif'>文学艺术</p>
+			<ul id="myul1">
+				<li><img src='images/fclose.gif'>先锋写作</li>
+				<li><img src='images/fclose.gif'>小说散文</li>
+				<li><img src='images/fclose.gif'>诗风词韵</li>
+			</ul>
+		</li>
+		<li>
+			<p onClick="show('myul2')"><img src='images/doc.gif'>贴图专区</p>
+			<ul id="myul2">
+				<li><img src='images/fclose.gif'>真我风采</li>
+				<li><img src='images/fclose.gif'>视频贴图</li>
+				<li><img src='images/fclose.gif'>行行摄摄</li>
+				<li><img src='images/fclose.gif'>Flash贴图</li>
+			</ul>
+		</li>
+		<li>
+			<p onClick="show('myul3')"><img src='images/doc.gif'>房产论坛</p>
+			<ul id="myul3">
+				<li><img src='images/fclose.gif'>我要买房</li>
+				<li><img src='images/fclose.gif'>楼市话题</li>
+				<li><img src='images/fclose.gif'>我要卖房</li>
+				<li><img src='images/fclose.gif'>租房心语</li>
+				<li><img src='images/fclose.gif'>二手市场</li>
+			</ul>
+		</li>
+		<li>
+			<p onClick="show('myul4')"><img src='images/doc.gif'>娱乐八卦</p>
+			<ul id="myul4">
+				<li><img src='images/fclose.gif'>红楼一梦</li>
+				<li><img src='images/fclose.gif'>笑话论坛</li>
+				<li><img src='images/fclose.gif'>休闲生活</li>
+				<li><img src='images/fclose.gif'>大话春秋</li>
+			</ul>
+		</li>
+	</ul>
+    
+    <script>
+		function show(myid){
+			
+			if(document.getElementById(myid).style.display=="none"){
+				document.getElementById(myid).style.display="block";	
+			}else if(document.getElementById(myid).style.display=="block"){
+				document.getElementById(myid).style.display="none";	
+			}
+		}
+		
+    </script>
+</body>
+</html>
